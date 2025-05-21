@@ -1,12 +1,15 @@
 a.meanmenu-reveal{display:none}
 .mean-container .mean-bar {
-  background: #49AF45;
+  /* background: #49AF45; */
+  backdrop-filter: blur(30px);
   float: left;
   min-height: 60px;
-  padding: 4px 0 0;
   position: relative;
   width: 100%;
   z-index: 999;
+  position: fixed;
+  top: 0;
+  box-shadow: #232323 0px 0px 6px;
 }
 .mobile-menu.mean-container {
   overflow: hidden;
@@ -124,7 +127,7 @@ a.meanmenu-reveal{display:none}
 }
 .mean-container .mean-bar::before {
     color: #fff;
-    content: "Echofy";
+    /* content: "Echofy"; */
     font-size: 28px;
     font-weight: 600;
     left: 10px;
